@@ -1,4 +1,5 @@
 # Coursera Lingo
+<img width="1283" height="646" alt="image" src="https://github.com/user-attachments/assets/8b2ec0f0-a241-440a-bd1c-43e27244d5c6" />
 
 **Learn without language barriers. | تعلّم دون حواجز لغوية.**
 
@@ -6,6 +7,9 @@
 ![Status](https://img.shields.io/badge/status-alpha-orange)
 ![Chrome](https://img.shields.io/badge/Chrome-Manifest%20V3-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-22%2B-green)
+<img width="407" height="675" alt="image" src="https://github.com/user-attachments/assets/393c0d77-3bfe-4a18-9acf-6fee99d76dfd" />
+<img width="420" height="605" alt="image" src="https://github.com/user-attachments/assets/0cae309a-963a-4e61-8b32-c3fdb5d79a22" />
+
 
 Coursera Lingo is an independent, open-source Chrome extension designed to make Coursera lectures more accessible to Arabic-speaking learners. It reads available English subtitle tracks and displays synchronized Modern Standard Arabic captions alongside the original English text.
 
