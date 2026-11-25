@@ -1,14 +1,18 @@
-# Lingo — Arabic Subtitle Translator for YouTube, Coursera & Udemy
+# Lingo — AI Arabic Subtitle Translator for YouTube, Coursera & Udemy | No API Key Required
 
 <p align="center">
-  <strong>One learning experience. Three platforms. No language barriers.</strong><br>
-  إضافة كروم لترجمة فيديوهات يوتيوب ودورات كورسيرا ويوديمي إلى العربية.
+  <strong>Translate video subtitles with ChatGPT Plus — No API Key Required.</strong><br>
+  One learning experience. Three platforms. No language barriers.<br>
+  <strong>ترجمة فيديوهات يوتيوب وكورسيرا ويوديمي بالذكاء الاصطناعي دون مفتاح API.</strong><br>
+  <sub>Automatic mode is experimental; eligible ChatGPT Plus or Pro subscription and local helper required.</sub>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=flat-square" alt="MIT License"></a>
   <img src="https://img.shields.io/badge/Status-Alpha-f59e0b?style=flat-square" alt="Alpha status">
   <img src="https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome Manifest V3">
+  <img src="https://img.shields.io/badge/ChatGPT-Plus%20%2F%20Pro-10A37F?style=flat-square" alt="ChatGPT Plus or Pro for automatic subtitle translation">
+  <img src="https://img.shields.io/badge/API%20Key-Not%20Required-10A37F?style=flat-square" alt="No personal API key required for automatic translation">
   <img src="https://img.shields.io/badge/Node.js-22%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js 22+">
 </p>
 
@@ -29,6 +33,8 @@
 </p>
 
 **Lingo** is an open-source Arabic subtitle translator for Chrome, designed to help you translate YouTube videos, Coursera lectures, and Udemy courses from English to Arabic. Its dedicated browser extensions display synchronized bilingual subtitles (English + Arabic), so you can understand educational content while following the original terminology.
+
+> **Automatic AI translation without a personal API key:** With an eligible ChatGPT Plus or Pro subscription, Lingo is designed to translate video subtitles using your existing ChatGPT plan. Sign in with ChatGPT, connect the local helper, and start translating — no separate API billing setup or personal OpenAI API key is required. Automatic mode is experimental and subject to account eligibility and usage limits.
 
 Lingo — إضافة ترجمة فيديوهات يوتيوب وكورسيرا ويوديمي إلى العربية، تدعم عرض الترجمة العربية والإنجليزية معًا والاستعانة بـ ChatGPT لترجمة النصوص المتاحة في الفيديو.
 
@@ -79,7 +85,7 @@ A dedicated Udemy course subtitle translator for Arabic-speaking learners, with 
 | **Subtitle file support** | Import timed VTT and SRT files; export VTT. |
 | **Translation validation** | Validate segment IDs to prevent missing or duplicated entries. |
 | **Local caching** | Cache translations for up to eight lectures in the Coursera edition. |
-| **Automatic translation** | Designed for batch translation with pause and resume through the local connector (experimental). |
+| **Automatic translation** | Designed for batch translation with pause and resume through the local connector using an eligible ChatGPT Plus or Pro plan, without a personal API key (experimental). |
 | **Arabic-first interface** | Arabic interface with support for Modern Standard Arabic. |
 
 ## Screenshots
@@ -119,7 +125,7 @@ The following instructions apply to the Coursera edition. Use the corresponding 
 
 #### Automatic mode — experimental
 
-Requires the complete `server/` implementation, Node.js 22 or newer, and an eligible ChatGPT account. These steps describe the intended workflow; they do not establish that the connector is working.
+Requires the complete `server/` implementation, Node.js 22 or newer, and an eligible **ChatGPT Plus or Pro subscription**. No personal OpenAI API key, API credits purchase, or separate API billing setup is required when using the supported Sign in with ChatGPT integration. These steps describe the intended workflow; they do not establish that the connector is working.
 
 1. Install [Node.js](https://nodejs.org/).
 2. On Windows, run `START.cmd` from the project root and leave the window open.
@@ -128,7 +134,7 @@ Requires the complete `server/` implementation, Node.js 22 or newer, and an elig
 5. Refresh the connection status, open a lecture, load its English subtitles, load the available models, and choose one.
 6. Start translation.
 
-Requests use the eligible account's usage limits. Unlimited or free usage is not guaranteed. See the [official OpenAI integration documentation](https://developers.openai.com/siwc/token-sharing-open-source) for current requirements.
+Requests use the eligible account's ChatGPT plan usage limits. Unlimited translation is not guaranteed. The local connector key in step 3 is not an OpenAI API key. See the [official OpenAI integration documentation](https://developers.openai.com/siwc/token-sharing-open-source) for current requirements.
 
 ## Frequently asked questions
 
@@ -143,6 +149,10 @@ Yes. Coursera Lingo and Udemy Lingo are dedicated editions for these platforms. 
 ### Can I translate video subtitles with ChatGPT?
 
 Yes. The Coursera edition supports exporting a translation request and importing the translated JSON file manually. Automatic ChatGPT translation through the local connector is experimental and requires a complete, verified helper and an eligible account.
+
+### Do I need an OpenAI API key to translate videos automatically with ChatGPT Plus?
+
+No. The intended automatic workflow uses Sign in with ChatGPT and an eligible ChatGPT Plus or Pro subscription. You do not need to create a personal API key or configure separate API billing. The local helper must be installed and working, and translation is subject to your plan’s usage limits.
 
 ### Is Lingo free and open source?
 
@@ -242,7 +252,7 @@ Bug reports, feature requests, and pull requests are welcome. Please include bro
 
 <div dir="rtl" align="right">
 
-### إضافة ترجمة فيديوهات يوتيوب وكورسيرا ويوديمي للعربية
+### إضافة ترجمة فيديوهات يوتيوب وكورسيرا ويوديمي للعربية باستخدام ChatGPT — بدون مفتاح API
 
 Lingo مشروع مستقل ومفتوح المصدر، يهدف إلى جعل المحتوى التعليمي الأجنبي أكثر سهولة للمتعلم العربي، من خلال عرض النص الإنجليزي والترجمة العربية المتزامنة مع الفيديو.
 
@@ -258,13 +268,19 @@ Lingo مشروع مستقل ومفتوح المصدر، يهدف إلى جعل �
 
 يمكن استخدام الوضع اليدوي دون تشغيل المساعد المحلي: افتح الإضافة، اقرأ النص الأصلي، صدّر طلب الترجمة إلى ChatGPT، ثم استورد ملف الترجمة الناتج بصيغة JSON. كما يمكن استيراد ملفات VTT وSRT المتوافقة.
 
-أما الوضع التلقائي فهو تجريبي ويتطلب استكمال ملفات المساعد المحلي والتحقق من تسجيل الدخول وأهلية الحساب.
+### الترجمة التلقائية باستخدام ChatGPT Plus بدون مفاتيح API
+
+**لا تحتاج إلى إنشاء مفتاح OpenAI API أو إعداد فوترة API منفصلة.** يكفي من ناحية الاشتراك أن يكون لديك حساب ChatGPT Plus مؤهل (أو Pro)، مع تثبيت المساعد المحلي وتشغيله، ثم تسجيل الدخول بحساب ChatGPT والموافقة على الربط وبدء الترجمة.
+
+تظل هذه الميزة تجريبية حتى التحقق من عمل الربط، وتخضع الترجمة لحدود استخدام اشتراكك. مفتاح الاتصال بالمساعد المحلي ليس مفتاح OpenAI API.
 
 ### أسئلة شائعة
 
 **كيف أترجم فيديو يوتيوب إلى العربية؟** استخدم إصدار YouTube Lingo مع فيديو يحتوي على ترجمة إنجليزية متاحة ومدعومة.
 
 **هل توجد إضافة لترجمة كورسات كورسيرا ويوديمي إلى العربية؟** نعم، يوفر المشروع إصدار Coursera Lingo وإصدار Udemy Lingo لعرض الترجمة العربية بجانب النص الإنجليزي. هذا المستودع يوثق إصدار كورسيرا، وتحتاج الإصدارات الأخرى إلى ملفاتها الخاصة.
+
+**هل أحتاج إلى مفتاح API لترجمة فيديوهات يوتيوب أو كورسيرا أو يوديمي تلقائيًا؟** لا يحتاج مسار الربط المدعوم إلى مفتاح API شخصي؛ يعتمد الوضع التلقائي المصمم على اشتراك ChatGPT Plus أو Pro مؤهل ومساعد محلي يعمل بصورة صحيحة.
 
 **هل الإضافة مجانية؟** المشروع مفتوح المصدر بترخيص MIT، لكن خدمات الترجمة الخارجية تخضع لشروطها وحدود استخدامها وتكاليفها المحتملة.
 
